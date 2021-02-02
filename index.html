@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Lien Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+      crossorigin="anonymous"
+    />
+    <!-- Lien Google Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merienda&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Lien CSS -->
+    <link rel="stylesheet" href="./style.css" />
+    <title>OhMyCats!</title>
+  </head>
+  <body>
+    <!-- Nav -->
+    <nav>
+      <div class="titreNav">
+        <h2>OhMyCats!</h2>
+      </div>
+    </nav>
+
+    <!-- Header -->
+    <header>
+      <h1>Adoptez un chat trop bon !</h1>
+    </header>
+
+    <!-- Partie Centrale du site -->
+    <section>
+      <!-- Partie Centrale gauche (form) -->
+      <div class="gauche">
+        <div class="titreSectionGauche">
+          <h3>Les chats à adopter</h3>
+        </div>
+        <form>
+          <label for="form-select"><h4>Choix du chat :</h4></label>
+          <select class="form-select" aria-label="Default select example">
+            <option selected hidden disabled>-- Séléctionnez --</option>
+            <option value="sushi">Sushi</option>
+            <option value="maki">Maki</option>
+            <option value="sashimi">Sashimi</option>
+            <option value="yakitori">Yakitori</option>
+            <option value="onigri">Onigri</option>
+          </select>
+          <label for="explications"><h4>Raisons d'adoptions :</h4></label>
+          <textarea
+            name="explications"
+            id="choix"
+            cols="30"
+            rows="14"
+            placeholder="Saisissez ici les raisons pour lesquelles vous souhaitez adopter ce chat..."
+          ></textarea>
+          <button class="btn btn-success">Envoyer</button>
+        </form>
+        <!-- Intégration du message d'alerte de réussite d'envoi du formulaire -->
+        <div class="alert alert-success" role="alert">
+          Votre demande a bien été envoyée ! Nous vous répondrons dans les
+          meilleurs délais
+        </div>
+      </div>
+
+      <!-- Partie Centrale droite (carousel) -->
+      <div class="droite">
+        <div
+          id="carouselExampleCaptions"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
+          <ol class="carousel-indicators">
+            <li
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="0"
+              class="active"
+            ></li>
+            <li
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="1"
+            ></li>
+            <li
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="2"
+            ></li>
+            <li
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="3"
+            ></li>
+            <li
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="4"
+            ></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="./img/chat_1.jpg" class="d-block w-100" alt="sushi" />
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Sushi</h5>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="./img/chat_2.jpg" class="d-block w-100" alt="maki" />
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Maki</h5>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="./img/chat_3.jpg" class="d-block w-100" alt="sashimi" />
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Sashimi</h5>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img
+                src="./img/chat_4.jpg"
+                class="d-block w-100"
+                alt="yakitori"
+              />
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Yakitori</h5>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="./img/chat_5.jpg" class="d-block w-100" alt="onigri" />
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Onigri</h5>
+              </div>
+            </div>
+          </div>
+          <a
+            class="carousel-control-prev"
+            href="#carouselExampleCaptions"
+            role="button"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </a>
+          <a
+            class="carousel-control-next"
+            href="#carouselExampleCaptions"
+            role="button"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="centreFooter">
+        <div class="gaucheFooter">
+          <h2>Nos Chats à adopter...</h2>
+          <p>
+            Sed quid est quod in hac causa maxime homines admirentur et
+            reprehendant meum consilium, cum ego idem antea multa decreverim,
+            que magis ad hominis dignitatem quam ad rei publicae necessitatem
+            pertinerent? Supplicationem quindecim dierum decrevi sententia mea.
+            Rei publicae satis erat tot dierum quot C. Mario ; dis immortalibus
+            non erat exigua eadem gratulatio quae ex maximis bellis. Ergo ille
+            cumulus dierum hominis est dignitati tributus.
+          </p>
+          <p>
+            Haec igitur prima lex amicitiae sanciatur, ut ab amicis honesta
+            petamus, amicorum causa honesta faciamus, ne exspectemus quidem, dum
+            rogemur; studium semper adsit, cunctatio absit; consilium vero dare
+            audeamus libere. Plurimum in amicitia amicorum bene suadentium
+            valeat auctoritas, eaque et adhibeatur ad monendum non modo aperte
+            sed etiam acriter, si res postulabit, et adhibitae pareatur.
+          </p>
+        </div>
+        <div class="droiteFooter">
+          <img src="./img/tete-chat.png" alt="têteDeChat" />
+        </div>
+      </div>
+      <div class="miniFooter">
+        <p>&#169 OhMyCats</p>
+      </div>
+    </footer>
+
+    <!-- --------------------------------------------------------------------------------------------------------------------- -->
+    <!-- Lien jQuery -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+      integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
+      crossorigin="anonymous"
+    ></script>
+    <!-- Lien Js BootStrap -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Lien JS -->
+    <script src="./script.js"></script>
+  </body>
+</html>
